@@ -57,7 +57,7 @@ private VerticalPanel mainPanel = new VerticalPanel();
 	      public void useless()
 	      {
 	    	  
-	    	  System.out.println();
+	    	  System.out.println("");
 	      }
 	      public void onSuccess(LoginInfo result) {
 	        loginInfo = result;
