@@ -54,7 +54,11 @@ private VerticalPanel mainPanel = new VerticalPanel();
 	      public void onFailure(Throwable error) {
 	    	  handleError(error);
 	      }
-
+	      public void useless()
+	      {
+	    	  
+	    	  System.out.println();
+	      }
 	      public void onSuccess(LoginInfo result) {
 	        loginInfo = result;
 	        if(loginInfo.isLoggedIn()) {
