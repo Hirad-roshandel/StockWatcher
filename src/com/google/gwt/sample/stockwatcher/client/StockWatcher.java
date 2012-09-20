@@ -47,6 +47,11 @@ private VerticalPanel mainPanel = new VerticalPanel();
   /**
    * Entry point method.
    */
+  public void useless()
+  {
+	  
+	  System.out.println("");
+  }
   public void onModuleLoad() {
 	  // Check login status using login service.
 	    LoginServiceAsync loginService = GWT.create(LoginService.class);
@@ -54,11 +59,7 @@ private VerticalPanel mainPanel = new VerticalPanel();
 	      public void onFailure(Throwable error) {
 	    	  handleError(error);
 	      }
-	      public void useless()
-	      {
-	    	  
-	    	  System.out.println("");
-	      }
+	      
 	      public void onSuccess(LoginInfo result) {
 	        loginInfo = result;
 	        if(loginInfo.isLoggedIn()) {
